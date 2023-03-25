@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangulos</title>
+</head>
+<body>
+    <H1>Triangulo e suas funções</H1>
+    <h3>Classificação dos Triângulos</h3>
+    <h4>Referente aos lados</h4>
+<p>Equilátero - Possui todos os lados e ânguloscongruentes. (ângulos de 60°)</p>
+<P>Isósceles - Possui dois lados e ângulos congruentes.</P>
+<p>Escaleno - Possui todos os lados e ângulos distintos.</p>
+
+<h4>Referente aos Ângulos</h4>
+<p>Retângulo - Possui um ângulo reto (90°)</p>
+<P>Actângulo - Todos os ângulos são agudos (menores em 90°) </P>
+<p>Obtusângulos - Possui um ângulo obtuso </p>
+
+<h2>Áreas de Triangulos</h2>
+<img src="imgtri/area triangulo.png" alt="">
+
+<h4>Calcule aqui!</h4>
+<p>
+    Base do triangulo:<br />
+<input id="n1" type="number"/><br />
+   Altura do Triangulo:<br />
+<input id="n2" type="number"/><br /><br />
+
+<button onclick="somar()">Calcular</button>
+<br />
+
+A área do Triangulo é
+<span></span>
+
+</p> 
+
+<script>
+    var n1 = document.querySelector('#n1')
+    var n2 = document.querySelector('#n2')
+    var resultadotriangulo = document.querySelector('span')
+
+function somar(){
+    resultadotriangulo.innerHTML = (parseInt(n1.value) * parseInt(n2.value))/ 2
+}
+
+</script>
+
+<h2>Fórmula de Heron</h2>
+<img src="imgtri/triangulo heron.png" alt="">
+
+<h2>Área do Triangulo Retangulo</h2>
+<img src="imgtri/triangulo retangulo area.png" alt="">
+
+<h4>Calcule aqui!</h4>
+<p>
+    Lado perpendicular do triangulo:<br />
+<input id="n3" type="number"/><br />
+   Lado perpendicular do triangulo:<br />
+<input id="n4" type="number"/><br /><br />
+
+<button onclick="somardois()">Calcular</button>
+<br />
+
+A área do Triangulo é
+<span></span>
+
+</p> 
+
+<script>
+    var n3 = document.querySelector('#n3')
+    var n4 = document.querySelector('#n4')
+    var resultadotrianguloreta = document.querySelector('span')
+
+function somardois(){
+    resultadotrianguloreta.innerHTML = (parseInt(n3.value) * parseInt(n4.value))/ 2
+}
+
+</script>
+
+<h2>Área do Triangulo Equilatero</h2>
+<img src="imgtri/area triangulo equilatero.png" alt="">
+
+
+<P>para voltar a pagina anterior <a href="index.html" rel="prev">pagina anterior</a></P>
+</body>
+</html>

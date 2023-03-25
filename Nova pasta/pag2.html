@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrilateros</title>
+</head>
+<body>
+<h1>-----Quadrilatero e suas funções-----</h1>
+<h3>Sejam A, B, C e D quatro pontos de um mesmo plano, todos distintos e três não colineares.  Se  os  segmentos  AB,  BC,  CD,  e  DA  interceptam-se  apenas  nas extremidades, a reunião desses quatro segmentos é um quadrilátero</h3>
+<img src="imgquadri/quadrilateros notaveis.png" alt="">
+
+
+<p>
+
+
+</p>
+
+<h2>----Quadrado</h2>
+ 
+<img src="imgquadri/quadrado calculo.png" alt="">
+
+<h4>Calcule aqui!</h4>
+<p>Lado 1 do Quadrado:<br />
+<input id="n1" type="number"/><br />
+Lado 2 do Quadrado:<br />
+<input id="n2" type="number"/><br /><br />
+
+<button onclick="somar()">Calcular</button>
+<br />
+
+A área do Quadrado é
+<span></span>
+
+</p> 
+
+<script>
+    var n1 = document.querySelector('#n1')
+    var n2 = document.querySelector('#n2')
+    var resultadoquadrado = document.querySelector('span')
+
+function somar(){
+    resultadoquadrado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>----Trapézio</h2>
+<img src="imgquadri/trapezio imagem.png" alt="">
+<img src="imgquadri/trapezio calculo.png" alt="">
+
+<h4>Calcule aqui!</h4>
+
+
+<p>Base grande do trapézio:<br />
+    <input id="n3" type="number"/><br />
+    Base
+ pequena do trapézio:<br />
+    <input id="n4" type="number"/><br />
+    Altura do trapézio:<br />
+    <input id="n5" type="number"/><br /><br />
+
+    <button onclick="somardois()"> Calcular</button>
+    <br />
+    A área do Trapézio é
+    <span></span>
+
+</p>
+
+<script>
+
+var n3 = document.querySelector('#n3')
+var n4 = document.querySelector('#n4')
+var n5 = document.querySelector('#n5')
+var resultadotrapezio = document.querySelector('span')
+
+function somardois(){
+    resultadotrapezio.innerHTML =  ((parseInt(n3.value) + parseInt(n4.value))* parseInt(n5.value))/ 2
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<h2>----Losango</h2>
+<img src="imgquadri/losango calculo.png" alt="">
+
+<p>
+<h4>Calcule aqui!</h4>
+
+Diagonal Maior:<br />
+<input id="n6" type="number"/><br />
+Diagonal Menor:<br />
+<input type="number" id="n7"/><br />
+
+<button onclick="somartres()"> Calcular</button>
+<br />
+A área do losango é
+<span></span>
+
+<script>
+
+var n6 = document.querySelector('#n6')
+var n7 = document.querySelector('#n7')
+var resultadolosango = document.querySelector('span')
+
+function somartres(){
+    resultadolosango.innerHTML = (parseInt(n6.value)* parseInt(n7.value))/ 2
+
+}
+
+</script>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+<h2>----Paralelogramo</h2>
+<img src="imgquadri/paralelogramo calculo.png" alt="">
+
+<p>
+    <h4>Calcule aqui!</h4>
+
+    Base do paralelogramo:<br />
+    <input type="number" name="" id="n10"/><br />
+    Altura referente a base:<br />
+    <input type="number" id="n11"/><br />
+    
+    <button onclick="somarquatro()"> Calcular</button>
+    <br />
+    
+    A Área do paralelogramo é
+    <span></span>
+
+    <script>
+        var n10 = document.querySelector('#n10')
+        var n11 = document.querySelector('#n11')
+        var resultadoparalelogramo = document.querySelector('span')
+
+        function somarquatro(){
+            resultadoparalelogramo.innerHTML = parseInt(n10.value) * parseInt(n11.value)
+        }
+
+        
+    </script>
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>----Retangulo</h2>
+<img src="imgquadri/retangulo calculo.png" alt="">
+
+<p>
+
+<h4>Calcule aqui!</h4>
+
+Base do paralelogramo:<br />
+<input type="number" name="" id="n8"/><br />
+Altura referente a base:<br />
+<input type="number" id="n9"/><br />
+
+<button onclick="somarcinco()"> Calcular</button>
+<br />
+
+A Área do retangulo é
+<span></span>
+
+<script>
+    var n8 = document.querySelector('#n8')
+    var n9 = document.querySelector('#n9')
+    var resultadoretangulo = document.querySelector('span')
+
+    function somarcinco(){
+        resultadoretangulo.innerHTML = parseInt(n8.value) * parseInt(n9.value)
+    }
+
+    
+</script>
+
+</p>
+
+
+<P>para voltar a pagina anterior <a href="index.html" rel="prev">pagina anterior</a></a></P>
+
+</body>
+</html>
