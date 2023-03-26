@@ -31,14 +31,14 @@ Lado 2 do Quadrado:<br />
 <br />
 
 A área do Quadrado é
-<span></span>
+<span> id="spanquadrado"</span>
 
 </p> 
 
 <script>
     var n1 = document.querySelector('#n1')
     var n2 = document.querySelector('#n2')
-    var resultadoquadrado = document.querySelector('span')
+    var resultadoquadrado = document.querySelector('spanquadrado')
 
 function somar(){
     resultadoquadrado.innerHTML = parseInt(n1.value) * parseInt(n2.value)
@@ -77,7 +77,7 @@ function somar(){
     <button onclick="somardois()"> Calcular</button>
     <br />
     A área do Trapézio é
-    <span></span>
+    <span> id="spantrapezio" </span>
 
 </p>
 
@@ -86,7 +86,7 @@ function somar(){
 var n3 = document.querySelector('#n3')
 var n4 = document.querySelector('#n4')
 var n5 = document.querySelector('#n5')
-var resultadotrapezio = document.querySelector('span')
+var resultadotrapezio = document.querySelector('spantrapezio')
 
 function somardois(){
     resultadotrapezio.innerHTML =  ((parseInt(n3.value) + parseInt(n4.value))* parseInt(n5.value))/ 2
@@ -118,13 +118,13 @@ Diagonal Menor:<br />
 <button onclick="somartres()"> Calcular</button>
 <br />
 A área do losango é
-<span></span>
+<span> id="spanlosango"</span>
 
 <script>
 
 var n6 = document.querySelector('#n6')
 var n7 = document.querySelector('#n7')
-var resultadolosango = document.querySelector('span')
+var resultadolosango = document.querySelector('spanlosango')
 
 function somartres(){
     resultadolosango.innerHTML = (parseInt(n6.value)* parseInt(n7.value))/ 2
@@ -159,12 +159,12 @@ function somartres(){
     <br />
     
     A Área do paralelogramo é
-    <span></span>
+    <span> id="spanparalelogramo" </span>
 
     <script>
         var n10 = document.querySelector('#n10')
         var n11 = document.querySelector('#n11')
-        var resultadoparalelogramo = document.querySelector('span')
+        var resultadoparalelogramo = document.querySelector('spanparalelogramo')
 
         function somarquatro(){
             resultadoparalelogramo.innerHTML = parseInt(n10.value) * parseInt(n11.value)
@@ -205,12 +205,12 @@ Altura referente a base:<br />
 <br />
 
 A Área do retangulo é
-<span></span>
+<span> id="spanretangulo" </span>
 
 <script>
     var n8 = document.querySelector('#n8')
     var n9 = document.querySelector('#n9')
-    var resultadoretangulo = document.querySelector('span')
+    var resultadoretangulo = document.querySelector('spanretangulo')
 
     function somarcinco(){
         resultadoretangulo.innerHTML = parseInt(n8.value) * parseInt(n9.value)
