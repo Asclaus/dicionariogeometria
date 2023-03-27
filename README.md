@@ -1,1 +1,2 @@
-# trabalho-Matematica.github.io
+# Dicionario de Geometria Plana
+Senac Ribeirão Preto - EMED
