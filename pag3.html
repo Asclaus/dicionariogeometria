@@ -84,11 +84,11 @@ A área do Triangulo é
     var n6 = document.querySelector('#n6')
     var n7 = document.querySelector('#n7')
     var semiperimetro = document.querySelector('#semiperimetro')
-    var resultadotriangulo = document.querySelector('#trianguloheron')
+    var trianguloheron = document.querySelector('#trianguloheron')
 
 function somar(){
     semiperimetro.innerHTML = (parseInt(n5.value) + parseInt(n6.value) + parseInt(n7.value))/ 2
-    resultadotriangulo.innerHTML = semiperimetro * (semiperimetro - parseInt(n5.value)) * (semiperimetro - parseInt(n6.value)) * (semiperimetro - parseInt(n7.value))
+    trianguloheron.innerHTML = semiperimetro * (semiperimetro - parseInt(n5.value)) * (semiperimetro - parseInt(n6.value)) * (semiperimetro - parseInt(n7.value))
 }
 
 </script>
