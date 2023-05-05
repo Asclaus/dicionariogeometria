@@ -51,6 +51,52 @@ function somar(){
 <h2>Fórmula de Heron</h2>
 <img src="imgtri/triangulo heron.png" alt="">
 
+<h4>Calcule aqui!</h4>
+<p>
+    Base do triangulo:<br />
+<input id="n5" type="number"/><br />
+   Altura do Triangulo:<br />
+<input id="n6" type="number"/><br /><br />
+
+<button onclick="somar()">Calcular</button>
+<br />
+
+A área do Triangulo é
+<span id="trianguloheron" > </span>
+
+</p> 
+
+<script>
+    var n1 = document.querySelector('#n5')
+    var n2 = document.querySelector('#n6')
+    var resultadotriangulo = document.querySelector('#trianguloheron')
+
+function somar(){
+    resultadotriangulo.innerHTML = (parseInt(n5.value) * parseInt(n6.value))/ 2
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h2>Área do Triangulo Retangulo</h2>
 <img src="imgtri/triangulo retangulo area.png" alt="">
 
