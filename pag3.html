@@ -66,8 +66,10 @@ function somar(){
 <p>
     Base do triangulo:<br />
 <input id="n5" type="number"/><br />
-   Altura do Triangulo:<br />
+   Lado direito do Triangulo:<br />
 <input id="n6" type="number"/><br /><br />
+  Lado esquerdo do triangulo:<br />
+  <input id="n7" type="number">
 
 <button onclick="somar()">Calcular</button>
 <br />
@@ -78,12 +80,15 @@ A área do Triangulo é
 </p> 
 
 <script>
-    var n1 = document.querySelector('#n5')
-    var n2 = document.querySelector('#n6')
+    var n5 = document.querySelector('#n5')
+    var n6 = document.querySelector('#n6')
+    var n7 = document.querySelector('#n7')
+    var semiperimetro = document.querySelector('#semiperimetro')
     var resultadotriangulo = document.querySelector('#trianguloheron')
 
 function somar(){
-    resultadotriangulo.innerHTML = (parseInt(n5.value) * parseInt(n6.value))/ 2
+    semiperimetro.innerHTML = (parseInt(n5.value) + parseInt(n6.value) + parseInt(n7.value))/ 2
+    resultadotriangulo.innerHTML = semiperimetro * (semiperimetro - parseInt(n5.value))
 }
 
 </script>
